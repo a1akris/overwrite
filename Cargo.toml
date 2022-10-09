@@ -1,9 +1,23 @@
 [package]
 name = "overwrite"
 version = "0.1.0"
+authors = ["a1akris <alkrivitskiy@pm.me>"]
 edition = "2021"
+license = "MIT OR Apache-2.0"
 
+description = """A simple trait that defines how to overwrite a type by another types.
+Mainly useful to create an app configuration from different sources.
+"""
+readme = "README.md"
+repository = "https://github.com/a1akris/overwrite"
+documentation = "https://docs.rs/overwrite"
+keywords = ["overwrite", "configuration", "sources"]
+categories = ["rust-patterns", "config", "command-line-interface"]
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+exclude = [
+    ".github/*"
+]
 
 [features]
 default = ["overwrite_options"]
